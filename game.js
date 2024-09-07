@@ -1,5 +1,5 @@
 const config = {
-  type: Phaser.CANVAS,
+  type: Phaser.AUTO,
   width: window.innerWidth,
   height: window.innerHeight,
   physics: {
