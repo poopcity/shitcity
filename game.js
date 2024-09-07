@@ -1,7 +1,8 @@
 const config = {
-  type: Phaser.AUTO,
+  type: Phaser.CANVAS,  // or Phaser.AUTO for automatic renderer
   width: window.innerWidth,
   height: window.innerHeight,
+  parent: 'game-container',  // Ensure Phaser attaches to the right container
   physics: {
     default: 'arcade',
     arcade: {
@@ -9,6 +10,12 @@ const config = {
       debug: false,
     },
   },
+  scene: {
+    preload: preload,
+    create: create,
+    update: update,
+  },
+};
   scene: {
     preload: preload,
     create: create,
