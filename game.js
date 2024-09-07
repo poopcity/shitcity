@@ -27,8 +27,8 @@ let jumpSound;
 let backgroundMusic;
 
 function preload() {
-  this.load.image('godzilla', 'assets/godzilla.png');
-  this.load.image('mario', 'assets/mario.png');
+  this.load.image('godzilla', 'assets/godzilla.PNG');
+  this.load.image('mario', 'assets/mario.PNG');
   this.load.image('background', 'assets/background.png');
   this.load.audio('roar', 'assets/roar.mp3');
   this.load.audio('jump', 'assets/jump.mp3');
