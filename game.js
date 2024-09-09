@@ -16,12 +16,6 @@ const config = {
     update: update,
   },
 };
-  scene: {
-    preload: preload,
-    create: create,
-    update: update,
-  },
-};
 
 const game = new Phaser.Game(config);
 
