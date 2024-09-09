@@ -1,5 +1,5 @@
 const config = {
-  type: Phaser.CANVAS,  // or Phaser.AUTO for automatic renderer
+  type: Phaser.AUTO,  // or Phaser.AUTO for automatic renderer
   width: window.innerWidth,
   height: window.innerHeight,
   parent: 'game-container',  // Ensure Phaser attaches to the right container
