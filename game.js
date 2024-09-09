@@ -30,12 +30,11 @@ let scoreText;
 let healthText;
 
 function preload() {
-  this.load.image('godzilla', 'assets/godzilla.PNG');
-  this.load.image('mario', 'assets/mario.PNG');
-  this.load.image('background', 'assets/background.png');
-  this.load.audio('roar', 'assets/roar.mp3');
+  this.load.image('godzilla', 'assets/godzilla.PNG').on('filecomplete', () => console.log('Godzilla image loaded'));
+  this.load.image('mario', 'assets/mario.PNG').on('filecomplete', () => console.log('Mario image loaded'));
+  this.load.image('background', 'assets/background.png').on('filecomplete', () => console.log('Background image loaded'));
+  this.load.audio('backgroundMusic', 'assets/backgroundMusic.mp3').on('filecomplete', () => console.log('Background music loaded'));
   this.load.audio('jump', 'assets/jump.mp3');
-  this.load.audio('backgroundMusic', 'assets/backgroundMusic.mp3');
 }
 
 function create() {
